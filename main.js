@@ -7,8 +7,8 @@ let quantiti = 49;
 let quadrata = Math.sqrt(quantiti)
 console.log(quadrata)
 // bottoni per difficolta md e hd e reset
-let bottoneMD = document.getElementById("button2");
-let bottoneHD = document.getElementById("button3");
+// let bottoneMD = document.getElementById("button2");
+// let bottoneHD = document.getElementById("button3");
 let reset =document.getElementById("button4")
 
 // verifico la difficolta (non funziona)
@@ -19,9 +19,7 @@ if (select == "md"){
 else if(select == "hd"){
     quantiti = 2
 }
-
-// resetto 
-
+// reset funzione
 reset.addEventListener("click", function(){
     document.getElementById("boxed").innerHTML = "";
 })
@@ -29,6 +27,7 @@ bottone.addEventListener("click",start,)
 // bottoneMD.addEventListener("click",startMD)
 // bottoneHD.addEventListener("click",startHD)
 let bombe = [];
+let punteggio=0;
 
 for (let i = 0; i < 10; i++) {
     let randomBomba = Math.floor(Math.random() * 49);
@@ -64,21 +63,12 @@ function start() {
         creaDiv.addEventListener("click", function() {
             creaDiv.style.color="#ffffff";
             if(creaDiv.value == bombe[i]){
-                alert("hai perso")
+                alert(`hai perso, il tuo punteggio ${punteggio}`)
             }
-
-
-
-            // creaDiv.innerHTML = Math.floor(Math.random()*100)
-            //     if(creaDiv.innerHTML == 4)
-            //     {alert("hai perso")
-            //         boxed.innerHTML=""
-            //     }
-
-            //     else if(creaDiv.innerHTML == 3){
-            //         // creaDiv.innerHTML = ""
-                    
-                // }
+            else{
+                punteggio ++
+            }
+            console.log(punteggio)
         });
     }
 }
