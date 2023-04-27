@@ -29,7 +29,6 @@ bottone.addEventListener("click",start,)
 // bottoneHD.addEventListener("click",startHD)
 let bombe = [];
 let punteggio=0;
-
 for (let i = 0; i < 10; i++) {
     let randomBomba = Math.floor(Math.random() * 49);
     const bombaNumero =randomBomba[i];
@@ -46,6 +45,14 @@ function start() {
         creaDiv.classList.add("box");
         boxed.appendChild(creaDiv);
         creaDiv.innerHTML = Math.floor(Math.random()*49)
+
+
+        
+        if (prova== true){
+            creaDiv.style.color="#ffffff";
+        }
+
+
         if (quantiti == 49){
             creaDiv.style.width = `calc(100% / ${quadrata})`
             creaDiv.style.height = `calc(100% / ${quadrata})`
@@ -60,22 +67,23 @@ function start() {
         //     creaDiv.style.width = `calc(100% / ${quadrata})`
         //     creaDiv.style.height = `calc(100% / ${quadrata})`
         // }
+            let clicked = false
 
-        creaDiv.addEventListener("click", function() {
-            creaDiv.style.color="#ffffff";
-            if(creaDiv.value == bombe[i]){
-                alert(`hai perso, il tuo punteggio ${punteggio}`)
+            creaDiv.addEventListener("click", prova)
+            function prova (){
+                creaDiv.style.color="#ffffff";
+                if(creaDiv.value == bombe[i]){
+                    alert(`hai perso, il tuo punteggio ${punteggio}`)
+                    let partitaFinita = true;
+                    return partitaFinita;
+                }
+                else{
+                    clicked = true
+                    punteggio ++
+                }
             }
-            else{
-                this.removeEventListener
-                punteggio ++
-            }
-        });
+        }
     }
-}
-
-
-
 
 
 
