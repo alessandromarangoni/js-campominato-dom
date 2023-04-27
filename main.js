@@ -31,7 +31,7 @@ bottone.addEventListener("click",start,)
 let bombe = [];
 
 for (let i = 0; i < 10; i++) {
-    let randomBomba = Math.floor(Math.random() * 100);
+    let randomBomba = Math.floor(Math.random() * 49);
     const bombaNumero =randomBomba[i];
     bombe.push(randomBomba)
     console.log(randomBomba)
@@ -45,7 +45,7 @@ function start() {
         let creaDiv = document.createElement("div");
         creaDiv.classList.add("box");
         boxed.appendChild(creaDiv);
-        creaDiv.innerHTML = Math.floor(Math.random()*100)
+        creaDiv.innerHTML = Math.floor(Math.random()*49)
         if (quantiti == 49){
             creaDiv.style.width = `calc(100% / ${quadrata})`
             creaDiv.style.height = `calc(100% / ${quadrata})`
@@ -62,7 +62,7 @@ function start() {
         // }
 
         creaDiv.addEventListener("click", function() {
-
+            creaDiv.style.color="#ffffff";
             if(creaDiv.value == bombe[i]){
                 alert("hai perso")
             }

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(144, 144, 144);
+    text-align: center;
+}
+header{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.head_container{
+    width: 600px;
+    border-top: 10px solid rgb(110, 110, 110);
+    border-left: 10px solid rgb(110, 110, 110);
+    border-bottom: 10px solid rgb(203, 203, 203);
+    border-right: 10px solid rgb(198, 198, 198);
+}
+main{
+    /* width: 100%; */
+    margin: 2rem;
+}
+#button,#button2,#button3{
+    border-top: 4px solid rgb(110, 110, 110);
+    border-left: 4px solid rgb(110, 110, 110);
+    border-bottom: 4px solid rgb(203, 203, 203);
+    border-right: 4px solid rgb(198, 198, 198);
+    font-size:20px;
+    padding: 0 .5rem;
+    margin: 1rem 1rem;
+    background-color: rgb(144, 144, 144);
+}
+
+#boxed{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-top: 4px solid rgb(110, 110, 110);
+    border-left: 4px solid rgb(110, 110, 110);
+    border-bottom: 4px solid rgb(203, 203, 203);
+    border-right: 4px solid rgb(198, 198, 198);
+    width: 600px;
+    height: 600px;
+}
+
+.box{
+    /* float: left; */
+    border-top: 4px solid rgb(110, 110, 110);
+    border-left: 4px solid rgb(110, 110, 110);
+    border-bottom: 4px solid rgb(203, 203, 203);
+    border-right: 4px solid rgb(198, 198, 198);
+    /* width: calc(100% / 10);
+    height: calc(100%/ 10); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(240, 248, 255, 0);
+}
+
+.boxMD{
+    /* float: left; */
+    border-top: 4px solid rgb(110, 110, 110);
+    border-left: 4px solid rgb(110, 110, 110);
+    border-bottom: 4px solid rgb(203, 203, 203);
+    border-right: 4px solid rgb(198, 198, 198);
+    width: calc(100% / 9);
+    height: calc(100%/ 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.boxHD{
+    /* float: left; */
+    border-top: 4px solid rgb(110, 110, 110);
+    border-left: 4px solid rgb(110, 110, 110);
+    border-bottom: 4px solid rgb(203, 203, 203);
+    border-right: 4px solid rgb(198, 198, 198);
+    width: calc(100% / 7);
+    height: calc(100%/ 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.clicked{
+    background-color: rgb(110, 110, 110);
+}
+
