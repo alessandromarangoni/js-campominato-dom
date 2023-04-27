@@ -22,6 +22,7 @@ else if(select == "hd"){
 // reset funzione
 reset.addEventListener("click", function(){
     document.getElementById("boxed").innerHTML = "";
+    punteggio = 0;
 })
 bottone.addEventListener("click",start,)
 // bottoneMD.addEventListener("click",startMD)
@@ -66,9 +67,9 @@ function start() {
                 alert(`hai perso, il tuo punteggio ${punteggio}`)
             }
             else{
+                this.removeEventListener
                 punteggio ++
             }
-            console.log(punteggio)
         });
     }
 }
