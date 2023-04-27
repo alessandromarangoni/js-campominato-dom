@@ -57,7 +57,6 @@ function start() {
             creaDiv.style.width = `calc(100% / ${quadrata})`
             creaDiv.style.height = `calc(100% / ${quadrata})`
         }
-
         // else if (quantiti == 10){
         //     creaDiv.style.width = `calc(100% / ${quadrata})`
         //     creaDiv.style.height = `calc(100% / ${quadrata})`
@@ -73,6 +72,7 @@ function start() {
             function prova (){
                 creaDiv.style.color="#ffffff";
                 if(creaDiv.value == bombe[i]){
+                    document.getElementById("boxed").classList.add("clicked")
                     alert(`hai perso, il tuo punteggio ${punteggio}`)
                     let partitaFinita = true;
                     return partitaFinita;

@@ -91,6 +91,6 @@ main{
 }
 
 .clicked{
-    background-color: rgb(110, 110, 110);
+    color: rgb(255, 255, 255);
 }
 
